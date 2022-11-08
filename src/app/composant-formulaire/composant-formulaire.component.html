@@ -1,0 +1,63 @@
+<body>
+    <div class="formulaire col-md-6 mx-auto">
+        <form>
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input appString [(ngModel)]="nom" name="nom" type="text" class="form-control" id="nom" placeholder="Dupont" required>
+            </div>
+            <div class="form-group" >
+                <label for="prenom">Votre prénom</label>
+                <input appString [(ngModel)]="prenom" name="prenom" type="text" class="form-control" id="prenom" name="prenom" placeholder="Jean" required>
+            </div>
+            <div class="form-group">
+                <label for="adresse">Votre adresse</label>
+                <input [(ngModel)]="adresse" name="adresse" type="text" class="form-control" id="adresse" name="adresse" placeholder="8 rue de la Fonderie" required>
+            </div>
+            <div class="form-group">
+                <label for="codepostal">Votre code postal</label>
+                <input appNumber [(ngModel)]="codepostal" name="cp" type="text" class="form-control" id="codepostal" name="codepostal" placeholder="67000" maxlength="5" pattern="[0-9]+" required>
+            </div>
+            <div class="form-group">
+                <label for="ville">Votre ville</label>
+                <input appString [(ngModel)]="ville" name="ville" type="text" class="form-control" id="ville" name="ville" placeholder="Strasbourg" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Votre Téléphone</label>
+                <input appNumber [(ngModel)]="tel" name="tel" type="tel" class="form-control" id="tel" name="tel" placeholder="0612345678" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Votre e-mail</label>
+                <input appEmail [(ngModel)]="email" name="email" type="email" class="form-control" id="email" name="email" placeholder="monadresse@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Civilité</label>
+                <select [(ngModel)]="civilite" name="civilite" class="form-control" id="exampleFormControlSelect1">
+                  <option>Monsieur</option>
+                  <option>Madame</option>
+                </select>
+              </div>
+            <div class="form-group">
+                <label for="login">Votre login</label>
+                <input [(ngModel)]="login" name="login" type="text" class="form-control" id="login" name="login" placeholder="J.Dupont" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Votre mot de passe</label>
+                <input [(ngModel)]="password" name="mdp" type="password" class="form-control" id="mdp" name="mdp" placeholder="Mot de passe" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Confirmez votre mot de passe</label>
+                <input [(ngModel)]="password2" name="mdp2" type="password" class="form-control" id="mdp2" name="mdp2" oncopy="return false" onpaste="return false"
+                    oncut="return false" placeholder="Confirmer votre mot de passe" required>
+                <div class="invalid-feedback">Mots de passe différents</div>
+            </div>
+            <br>
+            <div>
+                <button (click)="creerClientEtAfficher()">Envoyer mon message </button>
+            </div>
+        </form>
+    </div>
+    <div *ngIf="client">
+        <app-composant-recap-data [client] = "client" (desaffiche) = "desaffiche()"></app-composant-recap-data>
+    </div>
+    
+</body>

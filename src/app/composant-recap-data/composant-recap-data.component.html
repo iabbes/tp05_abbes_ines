@@ -1,0 +1,26 @@
+<div *ngIf="client">
+    Nom : {{client.nom | firstCapitalLetter}}
+    <br>
+    Prénom : {{client.prenom | firstCapitalLetter}}
+    <br>
+    Adresse : {{client.adresse}}
+    <br>
+    Code postal : {{client.codepostal}}
+    <br>
+    Ville : {{client.ville | firstCapitalLetter}}
+    <br>
+    Téléphone : {{client.tel | phoneNumber}}
+    <br>
+    Mail : {{client.mail}}
+    <br>
+    Civilité : {{client.civilite}}
+    <br>
+    Login : {{client.login}}
+    <br>
+    Mot de passe : {{client.password}}
+    <br>
+    Confirmation mot de passe : {{client.password2}}
+    <br>
+</div>
+
+<button (click)="desafficher()" >Désafficher</button>
