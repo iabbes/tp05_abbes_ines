@@ -17,6 +17,7 @@ import { FirstCapitalLetterPipe } from './first-capital-letter.pipe';
 import { EmailDirective } from './email.directive';
 import { ComposantListAvionComponent } from './composant-list-avion/composant-list-avion.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { CatalogueComponent } from './catalogue/catalogue.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     PhoneNumberPipe,
     FirstCapitalLetterPipe,
     EmailDirective,
-    ComposantListAvionComponent
+    ComposantListAvionComponent,
+    CatalogueComponent
   ],
   imports: [
     BrowserModule,

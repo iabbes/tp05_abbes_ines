@@ -30,9 +30,6 @@ export class ComposantListAvionComponent implements OnInit {
     );
   }
 
-
-  
-
   ngOnDestroy(): void {
     this.destroy$.next(true);
   }

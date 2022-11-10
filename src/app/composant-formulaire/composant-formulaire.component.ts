@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Client } from '../../objets/client';
 @Component({
   selector: 'app-composant-formulaire',
@@ -8,6 +9,20 @@ import { Client } from '../../objets/client';
 export class ComposantFormulaireComponent implements OnInit {
 
   constructor() { }
+
+  clientForm = new FormGroup({
+    nom: new FormControl('',[Validators.required]),
+    prenom: new FormControl('',[Validators.required]),
+    adresse: new FormControl('',[Validators.required]),
+    ville: new FormControl('',[Validators.required]),
+    codepostal: new FormControl('',[Validators.required, Validators.pattern('[0-9]{5}')]),
+    email: new FormControl('',[Validators.email, Validators.required]),
+    password: new FormControl('',[Validators.required]),
+    password2: new FormControl('',[Validators.required]),
+    tel: new FormControl('',[Validators.required]),
+    login: new FormControl('',[Validators.required]),
+    civilite: new FormControl('',[Validators.required]),
+  });
 
   nom !: String;
   prenom !: String;
