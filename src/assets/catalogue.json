@@ -3,31 +3,31 @@
         "id": 1,
         "airplane": "Boeing 737",
         "type": "Passenger",
-        "price": 700000
+        "price": "700 000 €"
     },
     {
         "id": 2,
         "airplane": "Boeing 747",
         "type": "Passenger",
-        "price": 1000000
+        "price": "1 000 000 €"
     },
 
     {
         "id": 3,
         "airplane": "Boeing 777",
         "type": "Passenger",
-        "price": 1500000
+        "price": "1 500 000 €"
     },
     {
         "id": 4,
         "airplane": "F-22 Raptor",
         "type": "Fighter",
-        "price": 150000000
+        "price": "150 000 000 €"
     },
     {
         "id": 5,
         "airplane": "F-35 Lightning II",
         "type": "Fighter",
-        "price": 100000000
+        "price": "100 000 000 €"
     }
 ]

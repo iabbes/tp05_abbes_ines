@@ -1,11 +1,14 @@
 <nav class="navbar navbar-light bg-light">
-    <a routerLink="formulaire" class="navbar-brand" href="#">
+    <a [routerLink]="['/client']" class="navbar-brand">
         Formulaire
     </a>
-    <a routerLink="listPlane" class="navbar-brand" href="#">
+    <a [routerLink]="['/avion/listPlane']" class="navbar-brand">
         Avion
     </a>
+    <a [routerLink]="['/avion/panier']" class="navbar-brand"> 
+        Panier
+    </a>
 
-    {{numberProduct$ | async}}
+    Nombre avions dans panier : {{numberProduct$ | async}}
   
 </nav>

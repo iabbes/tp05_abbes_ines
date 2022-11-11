@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Select } from '@ngxs/store';
 import { Observable } from 'rxjs';
-import { ShoppingState } from '../shopping-state';
+import { EtatShopping } from '../etat-shopping';
 
 @Component({
   selector: 'app-composant-tetiere',
@@ -15,7 +15,7 @@ export class ComposantTetiereComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Select(ShoppingState.getNbProducts)
+  @Select(EtatShopping.getNbProducts)
   numberProduct$!: Observable<number>;
 
 }

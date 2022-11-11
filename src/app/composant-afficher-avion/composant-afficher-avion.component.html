@@ -4,8 +4,9 @@
         <img src="../../assets/avion.jpg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">{{plane.airplane}}</h5>
-            <p class="card-text">{{plane.id}}<br>{{plane.type}}<br>{{plane.price}}</p>
-            <a href="#" class="btn btn-primary">Go (coming soon)</a>
+            <a class="btn btn-primary" (click)="AjouterALaListeShopping(plane)">Go</a>
+            <a class="btn btn-primary" (click)="SupprimerAvionListeShopping(plane)">Supprimer</a>
+            <a class="btn btn-primary" [routerLink]="['/avion/avion/',plane.id]">Détails</a>
         </div>
     </div>
 
