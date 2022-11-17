@@ -6,5 +6,5 @@ import { ComposantAfficherAvionComponent } from './composant-afficher-avion/comp
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tp04_abbes_ines';
+  title = 'Tp05_abbes_ines';
 }
