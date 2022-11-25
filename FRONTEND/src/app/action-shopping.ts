@@ -1,4 +1,4 @@
-import { Avion } from "src/objets/avion";
+import { Avion } from "../../../FRONTEND/src/objets/avion";
 
 
 export class AjouterAvion {

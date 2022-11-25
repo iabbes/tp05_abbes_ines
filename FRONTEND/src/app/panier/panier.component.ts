@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Select, Store } from "@ngxs/store";
 import { Observable } from "rxjs";
-import { Avion } from "src/objets/avion";
+import { Avion } from "../../../../FRONTEND/src/objets/avion";
 import { SupprimerAvion } from "../action-shopping";
 import { EtatShopping } from "../etat-shopping";
 

@@ -9,16 +9,17 @@ import json from "../../assets/catalogue.json";
     providedIn: 'root'
 })
 
-export class LoginService{
+export class PlaneService{
 
     constructor(private http: HttpClient){
 
     }
-   
+    planes$ = of(json);
     
-    login(login: string, password: string): Observable<any> {
-        return this.http.post<any>("http://localhost/api/getLogin", {log: login, mdp: password});
-      }
+    getAllPlanes(): Observable<Plane[]>{
+      return this.http.get<Plane[]>('https://tp05-web-cnam.onrender.com/api/planes/getAll');
+      ;  
+    }
 
 
 }

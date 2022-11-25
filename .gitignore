@@ -1,15 +1,16 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
-/dist
+FRONTEND/dist
+dist/
 /tmp
 /out-tsc
 /bazel-out
 
 # Node
-/node_modules
-npm-debug.log
-yarn-error.log
+FRONTEND/node_modules
+FRONTEND/npm-debug.log
+FRONTEND/yarn-error.log
 
 # IDEs and editors
 .idea/
@@ -29,14 +30,15 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/.angular/cache
+.angular/cache
+FRONTEND/.angular/cache
 .sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+/FRONTEND/connect.lock
+/FRONTEND/coverage
+/FRONTEND/libpeerconnection.log
+FRONTEND/testem.log
+/FRONTEND/typings
 
 # System files
-.DS_Store
-Thumbs.db
+FRONTEND/.DS_Store
+FRONTEND/Thumbs.db

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Store } from '@ngxs/store';
-import { Avion  } from 'src/objets/avion';
+import { Avion  } from '../../../../FRONTEND/src/objets/avion';
 import { AjouterAvion, SupprimerAvion } from '../action-shopping';
 import { Plane } from '../models/plane.model';
 import { PlaneService } from '../services/plane.service';
